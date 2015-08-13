@@ -113,7 +113,7 @@ function heateor_sc_social_commenting( $file ) {
 		}
 		$commentingHtml = '<div class="heateor_sc_social_comments">';
 		if ( $tabs ) {
-			$commentingHtml .= ( isset( $heateor_sc_options['commenting_label'] ) ? '<div style="clear:both"></div><h3 class="comment-reply-title">' . $heateor_sc_options['commenting_label'] . '</h3><div style="clear:both"></div>' : '' ) . '<ul>' . $tabs . '</ul>';
+			$commentingHtml .= ( isset( $heateor_sc_options['commenting_label'] ) ? '<div style="clear:both"></div><h3 class="comment-reply-title">' . $heateor_sc_options['commenting_label'] . '</h3><div style="clear:both"></div>' : '' ) . '<ul class="heateor_sc_comments_tabs">' . $tabs . '</ul>';
 		}
 		$commentingHtml .= $divs;
 		$commentingHtml .= '</div>';
