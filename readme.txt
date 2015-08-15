@@ -75,7 +75,11 @@ This plugin is FREE to download and use. For advanced features and custom soluti
 Yes, we can help you with it. Just drop an email at support[at]heateor[dot]com
 
 == Screenshots ==
-1. **Social Comments**: Social Comments interface
+1. **Default Comments**: Default Comments active in tabbed interface
+2. **Facebook Comments**: Facebook Comments active in tabbed interface
+3. **Google Plus Comments**: Google Plus Comments active in tabbed interface
+4. **Disqus Comments**: Disqus Comments active in tabbed interface
+4. **Stacked Interface**: Disqus, and Google Plus Comments active in stacked layout
 
 == Changelog ==
 = 1.0 =
