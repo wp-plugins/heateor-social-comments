@@ -79,7 +79,7 @@ Yes, we can help you with it. Just drop an email at support[at]heateor[dot]com
 2. **Facebook Comments**: Facebook Comments active in tabbed interface
 3. **Google Plus Comments**: Google Plus Comments active in tabbed interface
 4. **Disqus Comments**: Disqus Comments active in tabbed interface
-4. **Stacked Interface**: Disqus, and Google Plus Comments active in stacked layout
+4. **Stacked Interface**: Disqus, Facebook and Google Plus Comments active in stacked layout
 
 == Changelog ==
 = 1.0 =
