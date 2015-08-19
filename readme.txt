@@ -3,7 +3,7 @@ Contributors: Heateor
 Donate link: https://www.heateor.com/add-ons
 Tags: social comments, facebook comments, disqus, +1 comments, google comments, comments notification, facebook comment notification, comment moderation, comments, wordpress comments, Heateor, social plugin
 Requires at least: 2.5.0
-Tested up to: 4.2.4
+Tested up to: 4.3
 Stable tag: 1.0
 License: GPLv2 or later
 
