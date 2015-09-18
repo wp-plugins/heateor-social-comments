@@ -3,8 +3,8 @@ Contributors: Heateor
 Donate link: https://www.heateor.com/add-ons
 Tags: social comments, facebook comments, disqus, +1 comments, google comments, comments notification, facebook comment notification, comment moderation, comments, wordpress comments, Heateor, social plugin
 Requires at least: 2.5.0
-Tested up to: 4.3
-Stable tag: 1.0
+Tested up to: 4.3.1
+Stable tag: 1.1
 License: GPLv2 or later
 
 Integrate Facebook Comments, Google Plus Comments and/or Disqus Comments on your website
@@ -82,6 +82,9 @@ Yes, we can help you with it. Just drop an email at support[at]heateor[dot]com
 4. **Stacked Interface**: Disqus, Facebook and Google Plus Comments active in stacked layout
 
 == Changelog ==
+= 1.1 =
+* [Bugfix] Facebook Comments Email Notification was working only for first comment when posted multiple comments without refreshing the page
+
 = 1.0 =
 * Initial release of the plugin
 
@@ -89,3 +92,6 @@ Yes, we can help you with it. Just drop an email at support[at]heateor[dot]com
 
 = 1.0 =
 * Initial release of the plugin
+
+= 1.1 =
+* [Bugfix] Facebook Comments Email Notification was working only for first comment when posted multiple comments without refreshing the page

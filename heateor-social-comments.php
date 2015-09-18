@@ -3,13 +3,13 @@
 Plugin Name: Heateor Social Comments
 Plugin URI: http://www.heateor.com
 Description: Enable Facebook Comments, Google Plus Comments, Disqus Comments along with default WordPress Comments.
-Version: 1.0
+Version: 1.1
 Author: Team Heateor
 Author URI: http://www.heateor.com
 License: GPL2+
 */
 defined( 'ABSPATH' ) or die( "Cheating........Uh!!" );
-define( 'HEATEOR_SOCIAL_COMMENTS_VERSION', '1.0' );
+define( 'HEATEOR_SOCIAL_COMMENTS_VERSION', '1.1' );
 
 $heateor_sc_options = get_option( 'heateor_sc' );
 
@@ -225,7 +225,7 @@ function heateor_sc_render_fb_comments() {
 	$commentingHtml = '<style type="text/css">.fb-comments,.fb-comments span,.fb-comments span iframe[style]{min-width:100%!important;width:100%!important}</style><div id="fb-root"></div><script type="text/javascript">';
 	global $heateor_fcn_options;
 	if ( isset( $heateor_fcn_options ) ) {
-		$commentingHtml .= 'heateorScCommentCreate=0,window.fbAsyncInit=function(){FB.init({appId:"",channelUrl:"'. site_url() .'//channel.html",status:!0,cookie:!0,xfbml:!0,version:"v2.4"}),FB.Event.subscribe("comment.create",function(e){heateorScCommentCreate||(heateorScCommentCreate++,e.commentID&&jQuery.ajax({type:"POST",dataType:"json",url:"'. site_url() .'/index.php",data:{action:"the_champ_moderate_fb_comments",data:e},success:function(){}}))})};';
+		$commentingHtml .= 'window.fbAsyncInit=function(){FB.init({appId:"",channelUrl:"'. site_url() .'//channel.html",status:!0,cookie:!0,xfbml:!0,version:"v2.4"}),FB.Event.subscribe("comment.create",function(e){e.commentID&&jQuery.ajax({type:"POST",dataType:"json",url:"'. site_url() .'/index.php",data:{action:"the_champ_moderate_fb_comments",data:e},success:function(){}})})};';
 	}
 	$commentingHtml .= '!function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||(o=e.createElement(n),o.id=t,o.src="//connect.facebook.net/' . ( isset($heateor_sc_options['comment_lang']) && $heateor_sc_options['comment_lang'] != '' ? $heateor_sc_options["comment_lang"] : 'en_US' ) . '/sdk.js#xfbml=1&version=v2.4",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");</script><div class="fb-comments" data-href="' . $url . '" data-colorscheme="' . ( isset($heateor_sc_options['comment_color']) && $heateor_sc_options['comment_color'] != '' ? $heateor_sc_options["comment_color"] : '' ) . '" data-numposts="' . ( isset($heateor_sc_options['comment_numposts']) && $heateor_sc_options['comment_numposts'] != '' ? $heateor_sc_options["comment_numposts"] : '' ) . '" data-width="' . ( isset( $heateor_sc_options['comment_width'] ) && $heateor_sc_options['comment_width'] != '' ? $heateor_sc_options["comment_width"] : '100%' ) . '" data-order-by="' . ( isset($heateor_sc_options['comment_orderby']) && $heateor_sc_options['comment_orderby'] != '' ? $heateor_sc_options["comment_orderby"] : '' ) . '" ></div>';
 	return $commentingHtml;
